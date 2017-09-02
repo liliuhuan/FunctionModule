@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, "PingFang SC", "Microsoft Yahei", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body{
+	background-color: #F8F9FA;
+}
+article {
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+	margin: 40px;
+
+}
+
+article h1{
+	padding: 22px 25px 10px;
+	font-size: 18px;
+
+}
+article h2{
+	padding: 19px 25px 10px;
+	font-size: 16px;
+}
+
+article h3{
+	padding: 15px 25px 10px;
+	font-size: 14px;
+
+}
+
+article p{
+	padding: 10px 25px 10px;
+	font-size: 13px;
+
+}
+
+article img{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+}
+
+article ol{
+	padding: 25px;
+	font-size: 13px;
+	margin-left: 25px;
+}

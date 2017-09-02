@@ -1,0 +1,53 @@
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.liliuhuan.com.simplyskill"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    greendao{
+        schemaVersion 1
+        targetGenDir 'src/main/java'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //与安全交互
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.google.dagger:dagger:2.2'
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.5'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.2'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    compile 'org.greenrobot:greendao:3.2.0'
+   // compile 'org.greenrobot:greendao-generator:3.2.0'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.7'//数据库加密
+}
