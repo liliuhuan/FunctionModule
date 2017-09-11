@@ -4,6 +4,7 @@ import android.view.View;
 
 import com.liliuhuan.com.simplyskill.Permission.PermissionsActivity;
 import com.liliuhuan.com.simplyskill.anime.BaseAnimationActivity;
+import com.liliuhuan.com.simplyskill.annotation.custome.CustomAnnotationActivity;
 import com.liliuhuan.com.simplyskill.immersive.ImmersiveActivity;
 import com.liliuhuan.com.simplyskill.savedata.SaveDataActivity;
 import com.liliuhuan.com.simplyskill.utils.IntentUtil;
@@ -34,7 +35,7 @@ public class MainActivity extends BaseActivity {
                 IntentUtil.startActivity(this, PermissionsActivity.class);
                 break;
             case R.id.button5:
-                IntentUtil.startActivity(this, PermissionsActivity.class);
+                IntentUtil.startActivity(this, CustomAnnotationActivity.class);
                 break;
             case R.id.button6:
                 IntentUtil.startActivity(this, SaveDataActivity.class);

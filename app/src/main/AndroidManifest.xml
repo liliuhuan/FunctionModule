@@ -48,7 +48,8 @@
         <activity android:name=".annotation.AnnotationActivity" />
         <activity android:name=".savedata.SaveDataActivity" />
         <activity android:name=".savedata.SharedPreferencesActivity" />
-        <activity android:name=".savedata.sqlite.SqliteActivity"></activity>
+        <activity android:name=".savedata.sqlite.SqliteActivity" />
+        <activity android:name=".annotation.custome.CustomAnnotationActivity"></activity>
     </application>
 
 </manifest>
