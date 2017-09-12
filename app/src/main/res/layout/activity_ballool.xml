@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liliuhuan.com.simplyskill.anime.qqanime.BalloonRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/balloonRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+    <!--播放视频-->
+    <com.liliuhuan.com.simplyskill.anime.qqanime.CustomVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+
+</com.liliuhuan.com.simplyskill.anime.qqanime.BalloonRelativeLayout>
+

@@ -4,6 +4,7 @@ import android.view.View;
 
 import com.liliuhuan.com.simplyskill.BaseActivity;
 import com.liliuhuan.com.simplyskill.R;
+import com.liliuhuan.com.simplyskill.anime.qqanime.BalloolActivity;
 import com.liliuhuan.com.simplyskill.utils.IntentUtil;
 
 import butterknife.OnClick;
@@ -30,6 +31,7 @@ public class BaseAnimationActivity extends BaseActivity {
                 IntentUtil.startActivity(this, PropertyAnimationActivity.class);
                 break;
             case R.id.button6:
+                IntentUtil.startActivity(this, BalloolActivity.class);
                 break;
             case R.id.button7:
                 break;
