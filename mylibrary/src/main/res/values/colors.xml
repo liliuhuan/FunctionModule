@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ff0000</color>
+
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="colorAccent">#FC955C</color>
+    <color name="color_orange">#Fc855C</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="red_bg">#EE5F5F</color>
+    <color name="text_bule">#22AEEB</color>
+    <color name="transparency">#00000000</color>
+    <color name="text_color_33">#333333</color>
+    <color name="text_color_77">#777777</color>
+    <color name="text_color_99">#999999</color>
+    <color name="bg_bule">#1EADEB</color>
+    <color name="text_gray">#CDCDCD</color>
+    <color name="list_bg">#F8F9FA</color>
+    <color name="bg_ff">#FFF8F9FA</color>
+    <color name="bg_gray1">#F1F1F1</color>
+    <color name="bg_gray">#FAFAFA</color>
+    <color name="bg_gray_EE">#F6F6f6</color>
+    <color name="app_bg">#F8F9FA</color>
+    <color name="bar_bg">#FC955C</color>
+    <color name="zan_bg">#4A4A4A</color>
+    <color name="code">#9DB981</color>
+    <color name="text_name">#5D5D5D</color>
+    <color name="text_77">#777777</color>
+    <color name="text_55">#555555</color>
+    <color name="text_cc">#CCCCCC</color>
+    <color name="text_AA">#AAAAAA</color>
+    <color name="home_text">#FEA16E</color>
+    <color name="line">#10000000</color>
+    <color name="black_40">#444444</color>
+    <color name="setting_expectations">#EF5F5F</color>
+
+    <color name="viewfinder_border">#ffafed44</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="transparent_background">#7f000000</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="cyan">#7EC300</color>
+    <color name="red_text">#EA5149</color>
+
+
+</resources>

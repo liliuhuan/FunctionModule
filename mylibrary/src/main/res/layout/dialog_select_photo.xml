@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+  <TextView
+      android:id="@+id/pick_from_cupture"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:gravity="center"
+      android:background="@drawable/rectangle_round_corner6_white"
+      android:text="拍照"
+      android:textSize="14sp"
+      android:textColor="@color/home_text"
+      />
+  <TextView
+      android:id="@+id/pick_from_gallery"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:layout_marginTop="12dp"
+      android:gravity="center"
+      android:background="@drawable/rectangle_round_corner6_white"
+      android:text="从相册选取"
+      android:textSize="14sp"
+      android:textColor="@color/home_text"
+      />
+  <TextView
+      android:id="@+id/pick_from_cancel"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:gravity="center"
+      android:layout_marginTop="12dp"
+      android:background="@drawable/rectangle_round_corner6_white"
+      android:text="取消"
+      android:textSize="14sp"/>
+
+</LinearLayout>
