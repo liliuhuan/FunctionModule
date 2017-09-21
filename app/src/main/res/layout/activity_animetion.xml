@@ -58,4 +58,16 @@
         android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="150dp" />
+    <TextView
+        android:text="hello world"
+        android:textStyle="bold"
+        android:shadowDy="5"
+        android:shadowDx="5"
+        android:shadowColor="#ff000000"
+        android:textSize="24sp"
+        android:shadowRadius="2"
+        android:background="@color/color_orange"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent" />
 </LinearLayout>
