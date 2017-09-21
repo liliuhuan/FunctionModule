@@ -45,6 +45,7 @@
     <color name="possible_result_points">#c0ffff00</color>
     <color name="cyan">#7EC300</color>
     <color name="red_text">#EA5149</color>
-
+    <color name="base_text_color_light">#909090</color>
+    <color name="base_loading_background">#f7f7f7</color>
 
 </resources>

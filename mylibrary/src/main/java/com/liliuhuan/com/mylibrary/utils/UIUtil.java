@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -86,7 +87,40 @@ public class UIUtil {
 		return getResources().getColorStateList(resId);
 	}
 
+	//判断当前的线程是不是在主线程
+	public static boolean isRunInMainThread() {
+		return android.os.Process.myTid() == getMainThreadId();
+	}
 
+	public static void runInMainThread(Runnable runnable) {
+		if (isRunInMainThread()) {
+			runnable.run();
+		} else {
+			post(runnable);
+		}
+	}
+
+	public static long getMainThreadId() {
+		return LibraryApp.getmMainThreadId();
+	}
+
+	/** 获取主线程的handler */
+	public static Handler getHandler() {
+		return LibraryApp.getmMainHandler();
+	}
+
+	/** 延时在主线程执行runnable */
+	public static boolean postDelayed(Runnable runnable, long delayMillis) {
+		return getHandler().postDelayed(runnable, delayMillis);
+	}
+
+	/** 在主线程执行runnable */
+	public static boolean post(Runnable runnable) {
+		return getHandler().post(runnable);
+	}
+	public static <T extends View> T findViewById(View v, int id) {
+		return (T) v.findViewById(id);
+	}
 }
 
 

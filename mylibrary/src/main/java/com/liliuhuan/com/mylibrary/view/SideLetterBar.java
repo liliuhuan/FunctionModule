@@ -9,8 +9,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
-import com.bolooo.studyhomeparents.R;
-
 
 public class SideLetterBar extends View {
     private static final String[] b = {"定位", "热门", "A", "B", "C", "D", "E", "F", "G", "H",  "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T",  "W", "X", "Y", "Z"};
@@ -52,13 +50,13 @@ public class SideLetterBar extends View {
         int width = getWidth();
         int singleHeight = height / b.length;
         for (int i = 0; i < b.length; i++) {
-            paint.setTextSize(getResources().getDimension(R.dimen.side_letter_bar_letter_size));
-            paint.setColor(getResources().getColor(R.color.cp_gray));
-            paint.setAntiAlias(true);
-            if (i == choose) {
-                paint.setColor(getResources().getColor(R.color.cp_gray_deep));
-//                paint.setFakeBoldText(true);  //加粗
-            }
+//            paint.setTextSize(getResources().getDimension(R.dimen.side_letter_bar_letter_size));
+//            paint.setColor(getResources().getColor(R.color.cp_gray));
+//            paint.setAntiAlias(true);
+//            if (i == choose) {
+//                paint.setColor(getResources().getColor(R.color.cp_gray_deep));
+////                paint.setFakeBoldText(true);  //加粗
+//            }
             float xPos = width / 2 - paint.measureText(b[i]) / 2;
             float yPos = singleHeight * i + singleHeight;
             canvas.drawText(b[i], xPos, yPos, paint);

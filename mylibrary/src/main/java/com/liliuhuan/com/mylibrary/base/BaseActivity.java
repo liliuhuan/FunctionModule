@@ -36,19 +36,9 @@ public abstract class BaseActivity extends FragmentActivity {
     }
 
     public abstract int initLoadResId() ;
-    protected abstract void initView();
-
-      /**
-       * setContentView之前执行的事件
-       */
-    protected void afterContentView(){}
-      /**
-       * 初始化数据
-       */
     protected void initDate(){}
-    /**
-     * 描述：获取数据源（网络请求或者数据库读取）
-     */
+    protected abstract void initView();
+    protected void afterContentView(){}
     protected void prepareData() {}
     /**
      * 启动当前应用设置页面
@@ -61,36 +51,10 @@ public abstract class BaseActivity extends FragmentActivity {
 
     public void onEventMainThread(InitEvent event) {
     }
-  @Override
-  public void onResume() {
-    super.onResume();
-  //  MobclickAgent.onPageStart(this.getClass().getSimpleName());
-   // MobclickAgent.onResume(this);
-  }
-
-  @Override
-  public void onPause() {
-    super.onPause();
-  //  MobclickAgent.onPageEnd(this.getClass().getSimpleName());
-   // MobclickAgent.onPause(this);
-  }
     @Override
     protected void onDestroy() {
         super.onDestroy();
         ButterKnife.unbind(this);
         EventBus.getDefault().unregister(this);
     }
-
-//    /**
-//     * 检查用户是否登录，未登录直接跳登录页
-//     * @return
-//     */
-//    public boolean checkLogin(){
-//        if(CommentUtils.isLogin()){
-//            return true;
-//        }else {
-//            IntentUtils.startIntent(this, LoginActivity.class);
-//            return false;
-//        }
-//    }
 }

@@ -49,4 +49,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="数据存储" />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test_loading" />
 </LinearLayout>

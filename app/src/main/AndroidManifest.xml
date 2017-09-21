@@ -50,7 +50,10 @@
         <activity android:name=".savedata.SharedPreferencesActivity" />
         <activity android:name=".savedata.sqlite.SqliteActivity" />
         <activity android:name=".annotation.custome.CustomAnnotationActivity" />
-        <activity android:name=".anime.qqanime.BalloolActivity"></activity>
+        <activity android:name=".anime.qqanime.BalloolActivity" />
+        <activity android:name=".loading.TestLoadingActivity" />
+        <activity android:name=".loading.TestLoadingLayoutActivity" />
+        <activity android:name=".loading.LoadinglayoutActivity"></activity>
     </application>
 
 </manifest>

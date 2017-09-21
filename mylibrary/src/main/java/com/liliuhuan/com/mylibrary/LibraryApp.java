@@ -3,6 +3,7 @@ package com.liliuhuan.com.mylibrary;
 import android.app.Application;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.os.Handler;
 import android.support.multidex.MultiDex;
 
 import com.liliuhuan.com.mylibrary.db.RealmHelper;
@@ -20,6 +21,9 @@ public class LibraryApp  extends Application {
     private static LibraryApp instance;
     private static Context context;
     public static String token;
+    public static int mMainThreadId;
+    private static Handler mMainHandler;
+
     public static LibraryApp getInstance() {
         return instance;
     }
@@ -34,6 +38,15 @@ public class LibraryApp  extends Application {
     public static void setToken(String token) {
         LibraryApp.token = token;
     }
+
+    public static int getmMainThreadId() {
+        return mMainThreadId;
+    }
+
+    public static Handler getmMainHandler() {
+        return mMainHandler;
+    }
+
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
@@ -45,10 +58,16 @@ public class LibraryApp  extends Application {
         super.onCreate();
         instance = this;
         context = getApplicationContext();
+        mMainThreadId = android.os.Process.myTid();
+        mMainHandler = new Handler();
         initPrefs();
         initRealm();
       //  initUpdateConfig();
+        initLoadingConfig();
     }
+
+
+
     private void initPrefs() {
         new Prefs.Builder()
                 .setContext(this)
@@ -183,4 +202,22 @@ public class LibraryApp  extends Application {
 //            }
 //        });
 //    }
+
+    private void initLoadingConfig() {
+//        LoadingLayout.getConfig()
+//                .setErrorText("出错啦~请稍后重试！")
+//                .setEmptyText("抱歉，暂无数据")
+//                .setNoNetworkText("无网络连接，请检查您的网络···")
+//                .setErrorImage(R.mipmap.define_error)
+//                .setEmptyImage(R.mipmap.define_empty)
+//                .setNoNetworkImage(R.mipmap.define_nonetwork)
+//                .setAllTipTextColor(R.color.gray)
+//                .setAllTipTextSize(14)
+//                .setReloadButtonText("点我重试哦")
+//                .setReloadButtonTextSize(14)
+//                .setReloadButtonTextColor(R.color.gray)
+//                .setReloadButtonWidthAndHeight(150,40)
+//                .setAllPageBackgroundColor(R.color.background);
+//        .setLoadingPageLayout(R.layout.define_loading_page)
+    }
 }
