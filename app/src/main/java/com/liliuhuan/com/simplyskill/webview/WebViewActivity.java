@@ -131,7 +131,7 @@ public class WebViewActivity extends BaseActivity {
     public void initView() {
         webview.getSettings().setJavaScriptEnabled(true);
         webview.loadUrl("file:///android_asset/wx.html");
-        webview.addJavascriptInterface(this, "wx");//js调用android
+        webview.addJavascriptInterface(this, "wx1");//js调用android
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
