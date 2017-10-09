@@ -53,7 +53,8 @@
         <activity android:name=".anime.qqanime.BalloolActivity" />
         <activity android:name=".loading.TestLoadingActivity" />
         <activity android:name=".loading.TestLoadingLayoutActivity" />
-        <activity android:name=".loading.LoadinglayoutActivity"></activity>
+        <activity android:name=".loading.LoadinglayoutActivity" />
+        <activity android:name=".dialog.DialogActivity"></activity>
     </application>
 
 </manifest>

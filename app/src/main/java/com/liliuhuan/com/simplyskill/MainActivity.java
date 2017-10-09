@@ -1,12 +1,13 @@
 package com.liliuhuan.com.simplyskill;
 
 import android.view.View;
+import android.widget.Toast;
 
 import com.liliuhuan.com.simplyskill.Permission.PermissionsActivity;
 import com.liliuhuan.com.simplyskill.anime.BaseAnimationActivity;
 import com.liliuhuan.com.simplyskill.annotation.custome.CustomAnnotationActivity;
+import com.liliuhuan.com.simplyskill.dialog.DialogActivity;
 import com.liliuhuan.com.simplyskill.immersive.ImmersiveActivity;
-import com.liliuhuan.com.simplyskill.loading.TestLoadingLayoutActivity;
 import com.liliuhuan.com.simplyskill.savedata.SaveDataActivity;
 import com.liliuhuan.com.simplyskill.utils.IntentUtil;
 import com.liliuhuan.com.simplyskill.webview.WebViewActivity;
@@ -20,7 +21,7 @@ public class MainActivity extends BaseActivity {
         return R.layout.activity_main;
     }
 
-    @OnClick({R.id.button1, R.id.button2, R.id.button3, R.id.button4,R.id.button5,R.id.button6,R.id.button7})
+    @OnClick({R.id.button1, R.id.button2, R.id.button3, R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button1:
@@ -42,7 +43,11 @@ public class MainActivity extends BaseActivity {
                 IntentUtil.startActivity(this, SaveDataActivity.class);
                 break;
             case R.id.button7:
-                IntentUtil.startActivity(this, TestLoadingLayoutActivity.class);
+//                IntentUtil.startActivity(this, TestLoadingLayoutActivity.class);
+                Toast.makeText(this,"敬请期待",Toast.LENGTH_LONG).show();
+                break;
+            case R.id.button8:
+                IntentUtil.startActivity(this, DialogActivity.class);
                 break;
         }
     }
