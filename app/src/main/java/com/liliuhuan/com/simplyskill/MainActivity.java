@@ -8,6 +8,7 @@ import com.liliuhuan.com.simplyskill.anime.BaseAnimationActivity;
 import com.liliuhuan.com.simplyskill.annotation.custome.CustomAnnotationActivity;
 import com.liliuhuan.com.simplyskill.aop.LoginActivity;
 import com.liliuhuan.com.simplyskill.dialog.DialogActivity;
+import com.liliuhuan.com.simplyskill.fragmentation.FragmationActivity;
 import com.liliuhuan.com.simplyskill.immersive.ImmersiveActivity;
 import com.liliuhuan.com.simplyskill.savedata.SaveDataActivity;
 import com.liliuhuan.com.simplyskill.utils.IntentUtil;
@@ -24,7 +25,8 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.button1, R.id.button2, R.id.button3,
             R.id.button4,R.id.button5,R.id.button6,
-            R.id.button7,R.id.button8,R.id.button9})
+            R.id.button7,R.id.button8,R.id.button9,R.id.button10
+    })
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button1:
@@ -54,6 +56,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button9:
                 IntentUtil.startActivity(this, LoginActivity.class);
+                break;
+            case R.id.button10:
+                IntentUtil.startActivity(this, FragmationActivity.class);
                 break;
         }
     }
