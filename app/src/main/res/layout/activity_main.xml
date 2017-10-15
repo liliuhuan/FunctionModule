@@ -68,5 +68,9 @@
         android:id="@+id/button10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="fragmation" />
+        android:text="fragmation" /> <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="menuselect" />
 </LinearLayout>
