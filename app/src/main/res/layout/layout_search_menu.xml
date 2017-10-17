@@ -9,37 +9,35 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/px_101"
         android:background="@color/white"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <LinearLayout
-            android:id="@+id/ll_subject"
+            android:id="@+id/ll_select"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/line_cs"
             android:orientation="horizontal">
             <TextView
-                android:id="@+id/subject"
+                android:id="@+id/tv_select"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="type1"
+                android:text="身边好课"
                 android:layout_centerVertical="true"
-                android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal|center_vertical"
                 android:textSize="@dimen/text_size_28_px"
                 android:textColor="@color/text_color_gey"
                 />
             <ImageView
-                android:id="@+id/img_sub"
+                android:id="@+id/img_sc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/subject"
+                android:layout_toRightOf="@+id/screening"
                 android:layout_marginLeft="@dimen/px_20"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
                 android:src="@mipmap/ic_down"/>
         </LinearLayout>
-
         <View
             android:id="@+id/line_sub"
             android:layout_width="@dimen/px_1"
@@ -60,7 +58,7 @@
                 android:id="@+id/comprehensive_sorting"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="type2"
+                android:text="全年龄"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center"
                 android:gravity="center_horizontal|center_vertical"
@@ -86,28 +84,28 @@
             android:layout_marginBottom="@dimen/px_20"
             android:background="#e0e0e0"></View>
         <LinearLayout
-            android:id="@+id/ll_select"
+            android:id="@+id/ll_subject"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:gravity="center"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@+id/line_cs"
+            android:gravity="center"
             android:orientation="horizontal">
             <TextView
-                android:id="@+id/tv_select"
+                android:id="@+id/subject"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="type3"
+                android:text="全部"
                 android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal|center_vertical"
                 android:textSize="@dimen/text_size_28_px"
                 android:textColor="@color/text_color_gey"
                 />
             <ImageView
-                android:id="@+id/img_sc"
+                android:id="@+id/img_sub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/screening"
+                android:layout_toRightOf="@+id/subject"
                 android:layout_marginLeft="@dimen/px_20"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
@@ -117,9 +115,9 @@
     <RelativeLayout
         android:id="@+id/rl_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/ll_tab"
-        android:background="#88000000">
+        android:background="#ffa800">
     </RelativeLayout>
 </RelativeLayout>
 

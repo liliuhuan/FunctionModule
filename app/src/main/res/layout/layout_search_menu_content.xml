@@ -13,7 +13,7 @@
         <RelativeLayout
             android:id="@+id/rl_main"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/px_720"
+            android:layout_height="200dp"
             android:background="@color/white"/>
     </LinearLayout>
 </LinearLayout>

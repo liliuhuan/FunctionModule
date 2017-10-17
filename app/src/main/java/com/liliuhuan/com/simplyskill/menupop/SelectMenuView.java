@@ -11,19 +11,19 @@ import android.widget.TextView;
 
 import com.liliuhuan.com.simplyskill.R;
 import com.liliuhuan.com.simplyskill.menupop.entity.DataEntity;
+import com.liliuhuan.com.simplyskill.menupop.holder.CityHolder;
+import com.liliuhuan.com.simplyskill.menupop.holder.SortHolder;
 import com.liliuhuan.com.simplyskill.menupop.holder.SubjectHolder;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static com.liliuhuan.com.simplyskill.R.id.subject;
 
 /**
- *
  * 搜索菜单栏
  * Created by vonchenchen on 2016/4/5 0005.
  */
-public class SelectMenuView extends LinearLayout{
+public class SelectMenuView extends LinearLayout {
 
     private static final int TAB_SUBJECT = 1;
     private static final int TAB_SORT = 2;
@@ -36,18 +36,17 @@ public class SelectMenuView extends LinearLayout{
     private View mSelectView;
 
     private View mRootView;
-    
+
     private View mPopupWindowView;
 
     private RelativeLayout mMainContentLayout;
     private View mBackView;
 
-    /** 科目 */
+    /**
+     * 科目
+     */
     private SubjectHolder mSubjectHolder;
-
-
     private OnMenuSelectDataChangedListener mOnMenuSelectDataChangedListener;
-
     private RelativeLayout mContentLayout;
 
     private TextView mSubjectText;
@@ -57,13 +56,10 @@ public class SelectMenuView extends LinearLayout{
     private TextView mSelectText;
     private ImageView mSelectArrowImage;
 
-    private List<DataEntity> mGroupList;
-    private List<DataEntity> mPrimaryList;
-    private List<DataEntity> mJuniorList;
-    private List<DataEntity> mHighList;
-    private List<List<DataEntity>> mSubjectDataList;
-
     private int mTabRecorder = -1;
+    private List<List<DataEntity>> mSubjectDataList;
+    private CityHolder mSortHolder;
+    private CityHolder mSelectHolder;
 
     public SelectMenuView(Context context) {
         super(context);
@@ -79,70 +75,29 @@ public class SelectMenuView extends LinearLayout{
         init();
     }
 
-    private void init(){
-
-        mGroupList = new ArrayList<>();
-        mGroupList.add(new DataEntity(1,"A"));
-        mGroupList.add(new DataEntity(2,"B"));
-        mGroupList.add(new DataEntity(3,"C"));
-        mPrimaryList = new ArrayList<>();
-        mPrimaryList.add(new DataEntity(1,"A1"));
-        mPrimaryList.add(new DataEntity(1,"A2"));
-        mPrimaryList.add(new DataEntity(1,"A3"));
-        mJuniorList = new ArrayList<>();
-        mJuniorList.add(new DataEntity(1,"B1"));
-        mJuniorList.add(new DataEntity(1,"B2"));
-        mJuniorList.add(new DataEntity(1,"B3"));
-        mJuniorList.add(new DataEntity(1,"B4"));
-        mJuniorList.add(new DataEntity(1,"B5"));
-        mJuniorList.add(new DataEntity(1,"B6"));
-        mJuniorList.add(new DataEntity(1,"B7"));
-
-        mHighList = new ArrayList<>();
-        mHighList.add(new DataEntity(1,"C1"));
-        mHighList.add(new DataEntity(1,"C2"));
-        mHighList.add(new DataEntity(1,"C3"));
-        mHighList.add(new DataEntity(1,"C4"));
-        mHighList.add(new DataEntity(1,"C5"));
-        mHighList.add(new DataEntity(1,"C6"));
-        mHighList.add(new DataEntity(1,"C7"));
-        mHighList.add(new DataEntity(1,"C8"));
-        mHighList.add(new DataEntity(1,"C9"));
-
-
-        mSubjectDataList = new ArrayList<List<DataEntity>>();
-        mSubjectDataList.add(mGroupList);
-        mSubjectDataList.add(mPrimaryList);
-        mSubjectDataList.add(mJuniorList);
-        mSubjectDataList.add(mHighList);
-
-
+    private void init() {
         //科目
         mSubjectHolder = new SubjectHolder(mContext);
-        mSubjectHolder.refreshData(mSubjectDataList, 0, 0);
-        mSubjectHolder.setOnRightListViewItemSelectedListener(new SubjectHolder.OnRightListViewItemSelectedListener() {
-            @Override
-            public void OnRightListViewItemSelected(int leftIndex, int rightIndex, String text) {
-                if(mOnMenuSelectDataChangedListener != null){
-                    int grade = leftIndex;
-                    int subject = getSubjectId(rightIndex);
-                    mOnMenuSelectDataChangedListener.onSubjectChanged(grade+"", subject+"");
-                }
-
-                dismissPopupWindow();
-                //Toast.makeText(UIUtils.getContext(), text, Toast.LENGTH_SHORT).show();
-                mSubjectText.setText(text);
-            }
-
-            @Override
-            public void OnRightListViewSelectedData(DataEntity dataEntity) {
-                mOnMenuSelectDataChangedListener.onSubjectChangedData(dataEntity);
-            }
-        });
-
+        //综合排序
+        mSortHolder = new CityHolder(mContext);
+        //筛选城市
+        mSelectHolder = new CityHolder(mContext);
     }
-
-    private int getSubjectId(int index){
+    private String getSortString(String info){
+        if(SortHolder.SORT_BY_NORULE.equals(info)){
+            return "全年龄";
+        }else if(SortHolder.SORT_BY_EVALUATION.equals(info)){
+            return "1-3岁";
+        }else if(SortHolder.SORT_BY_PRICELOW.equals(info)){
+            return "3-6岁";
+        }else if(SortHolder.SORT_BY_PRICEHIGH.equals(info)){
+            return "6-12岁";
+        }else if(SortHolder.SORT_BY_DISTANCE.equals(info)){
+            return "12岁以上";
+        }
+        return "全年龄";
+    }
+    private int getSubjectId(int index) {
         return index;
     }
 
@@ -174,10 +129,30 @@ public class SelectMenuView extends LinearLayout{
         mSubjectView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mOnMenuSelectDataChangedListener != null){
+                if (mOnMenuSelectDataChangedListener != null) {
                     mOnMenuSelectDataChangedListener.onViewClicked(mSubjectView);
                 }
                 handleClickSubjectView();
+            }
+        });
+        //点击 综合排序 弹出菜单
+        mSortView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mOnMenuSelectDataChangedListener != null){
+                    mOnMenuSelectDataChangedListener.onViewClicked(mSortView);
+                }
+                handleClickSortView();
+            }
+        });
+        //城市选择
+        mSelectView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mOnMenuSelectDataChangedListener != null){
+                    mOnMenuSelectDataChangedListener.onViewClicked(mSelectView);
+                }
+                handleClickSelectView();
             }
         });
         mContentLayout.setOnClickListener(new OnClickListener() {
@@ -187,19 +162,25 @@ public class SelectMenuView extends LinearLayout{
             }
         });
     }
-
-    private void handleClickSubjectView(){
-
+    private void handleClickSelectView(){
         mMainContentLayout.removeAllViews();
-        mMainContentLayout.addView(mSubjectHolder.getRootView(), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-
+        mMainContentLayout.addView(mSelectHolder.getRootView(), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        popUpWindow(TAB_SELECT);
+    }
+    private void handleClickSortView(){
+        mMainContentLayout.removeAllViews();
+        mMainContentLayout.addView(mSortHolder.getRootView(), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        popUpWindow(TAB_SORT);
+    }
+    private void handleClickSubjectView() {
+        mMainContentLayout.removeAllViews();
+        mMainContentLayout.addView(mSubjectHolder.getRootView(), ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         popUpWindow(TAB_SUBJECT);
     }
 
 
-
-    private void popUpWindow(int tab){
-        if(mTabRecorder != -1) {
+    private void popUpWindow(int tab) {
+        if (mTabRecorder != -1) {
             resetTabExtend(mTabRecorder);
         }
         extendsContent();
@@ -207,25 +188,76 @@ public class SelectMenuView extends LinearLayout{
         mTabRecorder = tab;
     }
 
-    private void extendsContent(){
+    private void extendsContent() {
         mContentLayout.removeAllViews();
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 600);
         mContentLayout.addView(mPopupWindowView, params);
     }
 
-    private void dismissPopupWindow(){
+    private void dismissPopupWindow() {
         mContentLayout.removeAllViews();
         setTabClose();
     }
 
-    public void setOnMenuSelectDataChangedListener(OnMenuSelectDataChangedListener onMenuSelectDataChangedListener){
+    public void setOnMenuSelectDataChangedListener(OnMenuSelectDataChangedListener onMenuSelectDataChangedListener) {
         this.mOnMenuSelectDataChangedListener = onMenuSelectDataChangedListener;
     }
 
-    public interface OnMenuSelectDataChangedListener{
+    public void setData(List<List<DataEntity>> mSubjectDataList) {
+        this.mSubjectDataList = mSubjectDataList;
+        mSubjectHolder.refreshData(mSubjectDataList, 0, 0);
+        mSubjectHolder.setOnRightListViewItemSelectedListener(new SubjectHolder.OnRightListViewItemSelectedListener() {
+            @Override
+            public void OnRightListViewItemSelected(int leftIndex, int rightIndex, String text) {
+                if (mOnMenuSelectDataChangedListener != null) {
+                    int grade = leftIndex;
+                    int subject = getSubjectId(rightIndex);
+                    mOnMenuSelectDataChangedListener.onSubjectChanged(grade + "", subject + "");
+                }
+                dismissPopupWindow();
+                mSubjectText.setText(text);
+            }
+
+            @Override
+            public void OnRightListViewSelectedData(DataEntity dataEntity) {
+                mOnMenuSelectDataChangedListener.onSubjectChangedData(dataEntity);
+            }
+        });
+    }
+    public void setCityData(List<String> cityData) {
+        mSelectHolder.refreshData(cityData, 0);
+        mSelectHolder.setOnCityListViewItemSelectedListener(new CityHolder.OnCityListViewItemSelectedListener() {
+            @Override
+            public void OnCityListViewItemSelected(int rightIndex, String text) {
+                dismissPopupWindow();
+                mSelectText.setText(text);
+            }
+            @Override
+            public void OnCityListViewSelectedData(DataEntity dataEntity) {
+                mOnMenuSelectDataChangedListener.onSubjectChangedData(dataEntity);
+            }
+        });
+    }
+    public void setYearData(List<String> cityData) {
+        mSortHolder.refreshData(cityData, 0);
+        mSortHolder.setOnCityListViewItemSelectedListener(new CityHolder.OnCityListViewItemSelectedListener() {
+            @Override
+            public void OnCityListViewItemSelected(int rightIndex, String text) {
+                dismissPopupWindow();
+                mSortText.setText(text);
+            }
+            @Override
+            public void OnCityListViewSelectedData(DataEntity dataEntity) {
+                mOnMenuSelectDataChangedListener.onSubjectChangedData(dataEntity);
+            }
+        });
+    }
+    public interface OnMenuSelectDataChangedListener {
 
         void onSubjectChanged(String grade, String subjects);
+
         void onSubjectChangedData(DataEntity dataEntity);
+
         void onSortChanged(String sortType);
 
         void onSelectedChanged(String gender, String classType);
@@ -236,33 +268,33 @@ public class SelectMenuView extends LinearLayout{
         void onSelectedDismissed(String gender, String classType);
     }
 
-    private void setTabExtend(int tab){
-        if(tab == TAB_SUBJECT){
+    private void setTabExtend(int tab) {
+        if (tab == TAB_SUBJECT) {
             mSubjectText.setTextColor(getResources().getColor(R.color.blue));
             mSubjectArrowImage.setImageResource(R.mipmap.ic_up_blue);
-        }else if(tab == TAB_SORT){
+        } else if (tab == TAB_SORT) {
             mSortText.setTextColor(getResources().getColor(R.color.blue));
             mSortArrowImage.setImageResource(R.mipmap.ic_up_blue);
-        }else if(tab == TAB_SELECT){
+        } else if (tab == TAB_SELECT) {
             mSelectText.setTextColor(getResources().getColor(R.color.blue));
             mSelectArrowImage.setImageResource(R.mipmap.ic_up_blue);
         }
     }
 
-    private void resetTabExtend(int tab){
-        if(tab == TAB_SUBJECT){
+    private void resetTabExtend(int tab) {
+        if (tab == TAB_SUBJECT) {
             mSubjectText.setTextColor(getResources().getColor(R.color.gray));
             mSubjectArrowImage.setImageResource(R.mipmap.ic_down);
-        }else if(tab == TAB_SORT){
+        } else if (tab == TAB_SORT) {
             mSortText.setTextColor(getResources().getColor(R.color.gray));
             mSortArrowImage.setImageResource(R.mipmap.ic_down);
-        }else if(tab == TAB_SELECT){
+        } else if (tab == TAB_SELECT) {
             mSelectText.setTextColor(getResources().getColor(R.color.gray));
             mSelectArrowImage.setImageResource(R.mipmap.ic_down);
         }
     }
 
-    private void setTabClose(){
+    private void setTabClose() {
 
         mSubjectText.setTextColor(getResources().getColor(R.color.text_color_gey));
         mSubjectArrowImage.setImageResource(R.mipmap.ic_down);
@@ -275,14 +307,12 @@ public class SelectMenuView extends LinearLayout{
     }
 
 
-
-    public void clearAllInfo(){
+    public void clearAllInfo() {
         //清除控件内部选项
         mSubjectHolder.refreshData(mSubjectDataList, 0, -1);
 
-
         //清除菜单栏显示
-        mSubjectText.setText("type1");
-        mSortText.setText("type2");
+        mSubjectText.setText("全部");
+        mSortText.setText("全年龄");
     }
 }

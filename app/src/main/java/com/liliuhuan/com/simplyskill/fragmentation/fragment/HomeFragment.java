@@ -25,6 +25,7 @@ public class HomeFragment extends SupportFragment {
     public static HomeFragment newInstance() {
         return new HomeFragment();
     }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

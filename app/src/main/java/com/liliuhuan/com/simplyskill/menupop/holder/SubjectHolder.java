@@ -57,7 +57,6 @@ public class SubjectHolder extends BaseWidgetHolder<List<List<DataEntity>>> {
         mLeftListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                 mLeftSelectedIndex = position;
                 mLeftSelectedIndexRecord = mLeftSelectedIndex;
                 if(mLeftRecordView != null){
@@ -65,7 +64,6 @@ public class SubjectHolder extends BaseWidgetHolder<List<List<DataEntity>>> {
                 }
                 view.setBackgroundResource(R.color.white);
                 mLeftRecordView = view;
-
                // mRightAdapter.setDataList(mDataList.get(position + 1), mRightSelectedIndex);
                 mRightAdapter.setDataList(mDataList.get(position + 1), 0);
                 mRightAdapter.notifyDataSetChanged();
@@ -78,15 +76,11 @@ public class SubjectHolder extends BaseWidgetHolder<List<List<DataEntity>>> {
                 mRightSelectedIndex = position;
                 mLeftSelectedIndexRecord = mLeftSelectedIndex;
                 ImageView imageView = (ImageView) view.findViewById(R.id.list2_right);
-
                 if(mRightRecordImageView != null) {
                     mRightRecordImageView.setVisibility(View.INVISIBLE);
                 }
-
                 imageView.setVisibility(View.VISIBLE);
-
                 mRightRecordImageView = imageView;
-
                 if(mOnRightListViewItemSelectedListener != null){
 
                     List<DataEntity> dataList = mDataList.get(mLeftSelectedIndex+1);
