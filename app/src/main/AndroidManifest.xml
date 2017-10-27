@@ -58,7 +58,8 @@
         <activity android:name=".dialog.DialogActivity" />
         <activity android:name=".aop.LoginActivity" />
         <activity android:name=".fragmentation.FragmationActivity" />
-        <activity android:name=".menupop.MenuActivity"></activity>
+        <activity android:name=".menupop.MenuActivity" />
+        <activity android:name=".CustomViewActivity"></activity>
     </application>
 
 </manifest>

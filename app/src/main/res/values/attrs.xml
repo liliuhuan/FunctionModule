@@ -8,5 +8,15 @@
         <attr name="metaButtonBarStyle" format="reference" />
         <attr name="metaButtonBarButtonStyle" format="reference" />
     </declare-styleable>
-
+    <declare-styleable name="LQRRefreshButton">
+        <attr name="refresh_btn_borderColor" format="color"/>
+        <attr name="refresh_btn_borderWidth" format="dimension"/>
+        <attr name="refresh_btn_borderRadius" format="dimension"/>
+        <attr name="refresh_btn_text" format="string"/>
+        <attr name="refresh_btn_textColor" format="color"/>
+        <attr name="refresh_btn_textSize" format="dimension"/>
+        <attr name="refresh_btn_iconSrc" format="reference"/>
+        <attr name="refresh_btn_iconSize" format="dimension"/>
+        <attr name="refresh_btn_space4TextAndIcon" format="dimension"/>
+    </declare-styleable>
 </resources>

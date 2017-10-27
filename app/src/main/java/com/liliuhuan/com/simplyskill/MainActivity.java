@@ -25,8 +25,8 @@ public class MainActivity extends BaseActivity {
     }
 
     @OnClick({R.id.button1, R.id.button2, R.id.button3,
-            R.id.button4,R.id.button5,R.id.button6,
-            R.id.button7,R.id.button8,R.id.button9,R.id.button10,R.id.button11
+            R.id.button4, R.id.button5, R.id.button6,
+            R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button7:
 //                IntentUtil.startActivity(this, TestLoadingLayoutActivity.class);
-                Toast.makeText(this,"敬请期待",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "敬请期待", Toast.LENGTH_LONG).show();
                 break;
             case R.id.button8:
                 IntentUtil.startActivity(this, DialogActivity.class);
@@ -60,8 +60,12 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button10:
                 IntentUtil.startActivity(this, FragmationActivity.class);
-                break;    case R.id.button11:
+                break;
+            case R.id.button11:
                 IntentUtil.startActivity(this, MenuActivity.class);
+                break;
+            case R.id.button12:
+                IntentUtil.startActivity(this, CustomViewActivity.class);
                 break;
         }
     }
