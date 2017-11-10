@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'me.tatarka.retrolambda'
 
 import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
@@ -9,12 +10,15 @@ import org.aspectj.tools.ajc.Main
 buildscript {
     repositories {
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath 'org.aspectj:aspectjtools:1.8.9'
         classpath 'org.aspectj:aspectjweaver:1.8.9'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
     }
 }
+
 repositories {
     mavenCentral()
 }
@@ -84,6 +88,10 @@ android {
 
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 

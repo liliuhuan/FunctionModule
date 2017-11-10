@@ -59,7 +59,19 @@
         <activity android:name=".aop.LoginActivity" />
         <activity android:name=".fragmentation.FragmationActivity" />
         <activity android:name=".menupop.MenuActivity" />
-        <activity android:name=".CustomViewActivity"></activity>
+        <activity android:name=".CustomViewActivity" />
+        <activity android:name=".service.AidlMutilActivity" />
+        <activity android:name=".service.AidlActivity" />
+        <activity android:name=".service.AidlSimpleActivity" />
+
+        <service android:name=".service.AidlSimpleService" />
+        <service android:name=".service.AidlMutilService" />
+        <service
+            android:name=".service.IPCService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".service.IPCActivity"></activity>
     </application>
 
 </manifest>

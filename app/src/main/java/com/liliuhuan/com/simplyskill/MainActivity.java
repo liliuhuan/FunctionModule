@@ -12,6 +12,7 @@ import com.liliuhuan.com.simplyskill.fragmentation.FragmationActivity;
 import com.liliuhuan.com.simplyskill.immersive.ImmersiveActivity;
 import com.liliuhuan.com.simplyskill.menupop.MenuActivity;
 import com.liliuhuan.com.simplyskill.savedata.SaveDataActivity;
+import com.liliuhuan.com.simplyskill.service.AidlActivity;
 import com.liliuhuan.com.simplyskill.utils.IntentUtil;
 import com.liliuhuan.com.simplyskill.webview.WebViewActivity;
 
@@ -26,7 +27,9 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.button1, R.id.button2, R.id.button3,
             R.id.button4, R.id.button5, R.id.button6,
-            R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12
+            R.id.button7, R.id.button8, R.id.button9,
+            R.id.button10, R.id.button11, R.id.button12
+            , R.id.button13
     })
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -66,6 +69,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.button12:
                 IntentUtil.startActivity(this, CustomViewActivity.class);
+                break;
+            case R.id.button13:
+                IntentUtil.startActivity(this, AidlActivity.class);
                 break;
         }
     }
