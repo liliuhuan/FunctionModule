@@ -1,10 +1,9 @@
 package com.liliuhuan.com.simplyskill.aop.login;
 
 import android.content.Context;
-import android.content.Intent;
 import android.util.Log;
+import android.widget.Toast;
 
-import com.liliuhuan.com.simplyskill.MainActivity;
 import com.liliuhuan.com.simplyskill.MyApplication;
 
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -51,8 +50,8 @@ public class CheckLoginAspectJ {
             } else {
                 Log.i(TAG, "checkLogin: 请登录");
                 MyApplication.isLogin = true ;
-                //Toast.makeText(context, "请登录", Toast.LENGTH_SHORT).show();
-                context.startActivity(new Intent(context, MainActivity.class));
+                Toast.makeText(context, "请登录", Toast.LENGTH_SHORT).show();
+               // context.startActivity(new Intent(context, MainActivity.class));
                 return null;
             }
         }
