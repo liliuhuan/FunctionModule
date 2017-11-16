@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.liliuhuan.com.mylibrary.utils.ToastUtils;
 import com.liliuhuan.com.simplyskill.R;
 
 import me.yokeyword.fragmentation.ISupportActivity;
@@ -42,11 +43,11 @@ public class HomeFragment extends SupportFragment {
 
     private void initView(View view) {
         Button tv = (Button) view.findViewById(R.id.btn_second);
-        tv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                start(SecondFragment.newInstance());
-            }
+        tv.setOnClickListener(view1 -> start(SecondFragment.newInstance()));
+
+        view.findViewById(R.id.btn_databing).setOnClickListener(v->{
+            //_mActivity.startActivity(new Intent(_mActivity, DataBindingActivity.class));
+            ToastUtils.showToast("敬请期待");
         });
     }
 }

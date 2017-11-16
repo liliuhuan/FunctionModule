@@ -10,5 +10,4 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
     </FrameLayout>
-
 </ScrollView>

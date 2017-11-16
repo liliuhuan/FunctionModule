@@ -19,4 +19,19 @@
         <attr name="refresh_btn_iconSize" format="dimension"/>
         <attr name="refresh_btn_space4TextAndIcon" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="circle_progress_view">
+        <!--进度条的宽度-->
+        <attr name="progress_paint_width" format="dimension"></attr>
+        <!--进度条颜色-->
+        <attr name="progress_paint_color" format="color"></attr>
+        <!--字体颜色-->
+        <attr name="progress_text_color_top" format="color"></attr>
+        <!--字体大小-->
+        <attr name="progress_text_size_top" format="dimension"></attr>
+        <!--字体颜色-->
+        <attr name="progress_text_color_bottom" format="color"></attr>
+        <!--字体大小-->
+        <attr name="progress_text_size_bottom" format="dimension"></attr>
+    </declare-styleable>
 </resources>

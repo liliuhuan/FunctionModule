@@ -66,4 +66,7 @@
     <!--LuYang-->
 
     <color name="card_bg">#EBEBEB</color>
+
+    <color name="paint_current">#29E516</color>
+    <color name="paint_out">#F6F82B</color>
 </resources>

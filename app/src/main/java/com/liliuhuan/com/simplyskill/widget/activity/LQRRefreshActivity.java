@@ -1,12 +1,13 @@
-package com.liliuhuan.com.simplyskill;
+package com.liliuhuan.com.simplyskill.widget.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
+import com.liliuhuan.com.simplyskill.R;
 import com.liliuhuan.com.simplyskill.widget.LQRRefreshButton;
 
-public class CustomViewActivity extends AppCompatActivity {
+public class LQRRefreshActivity extends AppCompatActivity {
 
     private LQRRefreshButton viewById;
     private Button btnStop;

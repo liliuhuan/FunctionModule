@@ -40,6 +40,7 @@ public class ForResultFragment extends SupportFragment {
                 Bundle bundle = new Bundle();
                 bundle.putString(SecondFragment.KEY_RESULT_TITLE, et.getText().toString());
                 setFragmentResult(RESULT_OK, bundle);
+                pop();
             }
         });
         view.findViewById(R.id.create_new).setOnClickListener(new View.OnClickListener() {
