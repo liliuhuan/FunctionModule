@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Lock9View">
+        <attr name="nodeLineWidth" format="dimension" />
+        <attr name="nodeLineColor" format="color" />
+        <attr name="nodePadding" format="dimension" />
+        <attr name="errorNum" format="integer" />
+        <attr name="minPoint" format="integer" />
+        <attr name="normalDrawable" format="color|reference"/>
+        <attr name="hightDrawable" format="color|reference"/>
+    </declare-styleable>
+</resources>

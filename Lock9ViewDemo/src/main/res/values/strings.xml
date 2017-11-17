@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="set_pass">请设置密码</string>
+</resources>
