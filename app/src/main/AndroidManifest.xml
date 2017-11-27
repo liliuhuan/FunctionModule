@@ -74,6 +74,9 @@
 
         <activity android:name=".service.IPCActivity" />
         <activity android:name=".widget.ViewAllActivity" />
+        <activity android:name=".Permission.ShotActivity" />
+        <activity android:name=".Permission.CodeActivity" />
+        <activity android:name=".Permission.ReadContractActivity"></activity>
     </application>
 
 </manifest>

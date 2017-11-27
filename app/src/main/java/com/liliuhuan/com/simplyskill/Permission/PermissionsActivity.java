@@ -1,6 +1,7 @@
 package com.liliuhuan.com.simplyskill.Permission;
 
 import android.Manifest;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,7 +22,7 @@ public class PermissionsActivity extends BaseActivity {
 
     @OnClick({R.id.button1, R.id.button2, R.id.button3, R.id.button4})
     public void onViewClicked(View view) {
-        String camera = Manifest.permission.CAMERA;
+        String camera = Manifest.permission.READ_EXTERNAL_STORAGE;
         RxPermissions rxPermissions = new RxPermissions(this);
         switch (view.getId()) {
             case R.id.button1:
@@ -39,10 +40,10 @@ public class PermissionsActivity extends BaseActivity {
                 });
                 break;
             case R.id.button2:
-
+                startActivity(new Intent(this,ReadContractActivity.class));
                 break;
             case R.id.button3:
-                rxPermissions.request(Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO)
+                rxPermissions.request(Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS)
                         .subscribe(new Consumer<Boolean>() {
                             @Override
                             public void accept(Boolean granted) throws Exception {
