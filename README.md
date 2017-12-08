@@ -1,5 +1,5 @@
 # SimlpeSkill
-项目介绍
+模块介绍
 
 app：一些技术的合计，aidl，动画，注解，aop，fragment，权限，数据库，自定义view，js与原生交互
 
