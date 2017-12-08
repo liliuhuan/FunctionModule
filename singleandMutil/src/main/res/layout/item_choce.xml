@@ -1,0 +1,20 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+       />
+    <TextView
+        android:id="@+id/tv_select_number"
+        android:text=""
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/oval_blue_18dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lock9ViewDemo/Lock9ViewDemo.iml" filepath="$PROJECT_DIR$/Lock9ViewDemo/Lock9ViewDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlimplySkill.iml" filepath="$PROJECT_DIR$/SlimplySkill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlProject/aidlProject.iml" filepath="$PROJECT_DIR$/aidlProject/aidlProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/menu_demo/menu_demo.iml" filepath="$PROJECT_DIR$/menu_demo/menu_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleA/moduleA.iml" filepath="$PROJECT_DIR$/moduleA/moduleA.iml" />
@@ -11,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/pswkeyboard/pswkeyboard.iml" filepath="$PROJECT_DIR$/pswkeyboard/pswkeyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/rsaAndaes/rsaAndaes.iml" filepath="$PROJECT_DIR$/rsaAndaes/rsaAndaes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singleandMutil/singleandMutil.iml" filepath="$PROJECT_DIR$/singleandMutil/singleandMutil.iml" />
       <module fileurl="file://$PROJECT_DIR$/skill.iml" filepath="$PROJECT_DIR$/skill.iml" />
     </modules>
   </component>

@@ -1,1 +1,1 @@
-include ':app', ':mylibrary', ':menu_demo', ':Lock9ViewDemo', ':pswkeyboard', ':rsaAndaes', ':moduleA', ':moduleB'
+include ':app', ':mylibrary', ':menu_demo', ':Lock9ViewDemo', ':pswkeyboard', ':rsaAndaes', ':moduleA', ':moduleB', ':singleandMutil', ':aidlProject'
