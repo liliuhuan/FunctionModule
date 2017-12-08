@@ -115,9 +115,10 @@ public class AES {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        data = encrypt(data, new SecretKeySpec(hex2byte(key), "AES").getEncoded());
+       // data = encrypt(data, new SecretKeySpec(hex2byte(key), "AES").getEncoded());三重加密
+        data = encrypt(data, key.getBytes());
         String result = byte2hex(data);
-        return result;
+        return Base64.encode(data);
     }
 
     /**
@@ -149,11 +150,11 @@ public class AES {
     public static String decrypt(String content, String key) {
         byte[] data = null;
         try {
-            data = hex2byte(content);
+            data = Base64.decode(content);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        data = decrypt(data, hex2byte(key));
+        data = decrypt(data, key.getBytes());
         if (data == null)
             return null;
         String result = null;

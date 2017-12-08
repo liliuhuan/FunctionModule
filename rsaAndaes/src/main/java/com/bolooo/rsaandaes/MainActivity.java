@@ -10,13 +10,11 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 
 public class MainActivity extends AppCompatActivity {
-
+    //aes 加密解密 一般要base64以下
     private TextView tvShow;
-    String str = "hello world";
-    private String encrypt;
-    private String encryptAseKey;
+    private String str = "hello world";
+    private String encrypt,encryptAseKey,privateKey;
     private RSAPrivateKey rsaPrivateKey;
-    private String privateKey;
     private String publicKeyRSA= "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKaHb9LiPPo+XfabujiNvA/xoptjXKt6\n" +
             "AqPD9l30KcHGZbCnBuQeEGFcGPOsG0Wi1vBtxvdKJDbLKK8S1xSGFd8CAwEAAQ==";
     private String privateKeyRSA= "MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEApodv0uI8+j5d9pu6\n" +
