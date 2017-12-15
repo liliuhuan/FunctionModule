@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppShortCutDemo</string>
+    <string name="compose_shortcut_short_label1">短按</string>
+    <string name="compose_shortcut_long_label1">扫一扫页面</string>
+    <string name="compose_shortcut_long_label2">二维码页面</string>
+    <string name="compose_disabled_message1">信息</string>
+</resources>

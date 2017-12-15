@@ -15,3 +15,4 @@ rsaAndaes：数据加密解密
 
 signleandMutil：单多选
 
+7.0ShortCut : 应用程序快捷键

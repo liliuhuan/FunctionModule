@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/7.0ShortCut/7.0ShortCut.iml" filepath="$PROJECT_DIR$/7.0ShortCut/7.0ShortCut.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lock9ViewDemo/Lock9ViewDemo.iml" filepath="$PROJECT_DIR$/Lock9ViewDemo/Lock9ViewDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlimplySkill.iml" filepath="$PROJECT_DIR$/SlimplySkill.iml" />
       <module fileurl="file://$PROJECT_DIR$/aidlProject/aidlProject.iml" filepath="$PROJECT_DIR$/aidlProject/aidlProject.iml" />
