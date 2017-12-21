@@ -76,7 +76,9 @@
         <activity android:name=".widget.ViewAllActivity" />
         <activity android:name=".Permission.ShotActivity" />
         <activity android:name=".Permission.CodeActivity" />
-        <activity android:name=".Permission.ReadContractActivity"></activity>
+        <activity android:name=".Permission.ReadContractActivity" />
+        <activity android:name=".annotation.custome.ioc.IocActivity" />
+        <activity android:name=".base.TestTitleBarActivity"></activity>
     </application>
 
 </manifest>

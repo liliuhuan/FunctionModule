@@ -1,12 +1,12 @@
 package com.liliuhuan.com.simplyskill;
 
 import android.view.View;
-import android.widget.Toast;
 
 import com.liliuhuan.com.simplyskill.Permission.PermissionsActivity;
 import com.liliuhuan.com.simplyskill.anime.BaseAnimationActivity;
-import com.liliuhuan.com.simplyskill.annotation.custome.CustomAnnotationActivity;
+import com.liliuhuan.com.simplyskill.annotation.custome.ioc.IocActivity;
 import com.liliuhuan.com.simplyskill.aop.LoginActivity;
+import com.liliuhuan.com.simplyskill.base.TestTitleBarActivity;
 import com.liliuhuan.com.simplyskill.dialog.DialogActivity;
 import com.liliuhuan.com.simplyskill.fragmentation.FragmationActivity;
 import com.liliuhuan.com.simplyskill.immersive.ImmersiveActivity;
@@ -24,6 +24,11 @@ public class MainActivity extends BaseActivity {
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+
     }
 
     @OnClick({R.id.button1, R.id.button2, R.id.button3,
@@ -47,14 +52,14 @@ public class MainActivity extends BaseActivity {
                 IntentUtil.startActivity(this, PermissionsActivity.class);
                 break;
             case R.id.button5:
-                IntentUtil.startActivity(this, CustomAnnotationActivity.class);
+                IntentUtil.startActivity(this, IocActivity.class);
                 break;
             case R.id.button6:
                 IntentUtil.startActivity(this, SaveDataActivity.class);
                 break;
             case R.id.button7:
-//                IntentUtil.startActivity(this, TestLoadingLayoutActivity.class);
-                Toast.makeText(this, "敬请期待", Toast.LENGTH_LONG).show();
+                IntentUtil.startActivity(this, TestTitleBarActivity.class);
+               // Toast.makeText(this, "敬请期待", Toast.LENGTH_LONG).show();
                 break;
             case R.id.button8:
                 IntentUtil.startActivity(this, DialogActivity.class);

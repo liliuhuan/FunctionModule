@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\android-AsymmetricFingerprintDialog\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\liqin\\.android\\build-cache\\12e3ebf2463e9a36b36d4eeba64e66795ad32c05\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\android-AsymmetricFingerprintDialog\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\liqin\\.android\\build-cache\\12e3ebf2463e9a36b36d4eeba64e66795ad32c05\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\android-AsymmetricFingerprintDialog\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\liqin\\.android\\build-cache\\12e3ebf2463e9a36b36d4eeba64e66795ad32c05\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\android-AsymmetricFingerprintDialog\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\liqin\\.android\\build-cache\\12e3ebf2463e9a36b36d4eeba64e66795ad32c05\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

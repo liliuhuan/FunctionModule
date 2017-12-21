@@ -34,6 +34,25 @@ public class CustomAnnotationActivity extends BaseActivity {
 
 
     public <T> T create(final Class<T> service) {
+        Class<? extends Class> aClass = service.getClass();
+//        Field[] fields = aClass.getFields();
+//        Method[] methods1 = aClass.getMethods();
+//        if (fields!=null){
+//            for (Field field:fields) {
+//                ReqType type = field.getAnnotation(ReqType.class);
+//               field.set();
+//
+//            }
+//        }
+//
+        Method[] methods = aClass.getMethods();
+        if (methods!=null){
+            for (Method method:methods) {
+                ReqType typeMethod = method.getAnnotation(ReqType.class);
+                //method.setAccessible(true);
+              //  method.invoke(aClass)
+            }
+        }
         return (T) Proxy.newProxyInstance(service.getClassLoader(), new Class<?>[]{service},
                 new InvocationHandler() {
 
