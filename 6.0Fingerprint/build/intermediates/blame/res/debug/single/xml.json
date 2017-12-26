@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\project\\5.0AfterCharacter\\6.0Fingerprint\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "D:\\project\\5.0AfterCharacter\\6.0Fingerprint\\src\\main\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "D:\\android-AsymmetricFingerprintDialog\\Application\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "D:\\android-AsymmetricFingerprintDialog\\Application\\src\\main\\res\\xml\\preferences.xml"
+    }
+]

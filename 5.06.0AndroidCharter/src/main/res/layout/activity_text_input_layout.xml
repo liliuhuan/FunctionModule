@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_tool_bar" />
+    <!-- android:background="@null" -->
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/text_input_edit_text"
+        android:hint="TextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_text"
+            android:hint="TextInputLayout"
+            android:textColorHint="@color/white"
+            android:background="@drawable/shape_xml"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <!--normal=56dp,mini=48dp -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_bar"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        app:pressedTranslationZ="10dp"
+        app:rippleColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--TabLayout-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="3dp"
+        app:tabGravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></android.support.v4.view.ViewPager>
+    <!--CoordinatorLayout-->
+   <android.support.design.widget.CoordinatorLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <android.support.design.widget.AppBarLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <android.support.design.widget.CollapsingToolbarLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_scrollFlags="scroll|enterAlways">
+               <include layout="@layout/title_tool_bar"
+                   app:layout_scrollFlags="scroll|enterAlways"/>
+           </android.support.design.widget.CollapsingToolbarLayout>
+       </android.support.design.widget.AppBarLayout>
+   </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/5.06.0AndroidCharter" />
+            <option value="$PROJECT_DIR$/6.0Fingerprint" />
             <option value="$PROJECT_DIR$/7.0ShortCut" />
             <option value="$PROJECT_DIR$/Lock9ViewDemo" />
             <option value="$PROJECT_DIR$/aidlProject" />

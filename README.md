@@ -15,4 +15,8 @@ rsaAndaes：数据加密解密
 
 signleandMutil：单多选
 
+5.06.0AndroidChaeter:5.0,6.0 材料特性总结
+
+6.0Fingerprint ： 指纹解锁，官方版
+
 7.0ShortCut : 应用程序快捷键

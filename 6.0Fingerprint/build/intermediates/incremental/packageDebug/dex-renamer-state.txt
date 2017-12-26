@@ -1,0 +1,7 @@
+#Tue Dec 26 17:43:00 CST 2017
+base.0=D\:\\project\\5.0AfterCharacter\\6.0Fingerprint\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_520d86d22227a1f0a5ee7a0c20fa7bb413aa75c9
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\project\\5.0AfterCharacter\\6.0Fingerprint\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_15f56efd2808ed0c2d26d95d973648848e986899\\classes.dex
+base.1=D\:\\project\\5.0AfterCharacter\\6.0Fingerprint\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_15f56efd2808ed0c2d26d95d973648848e986899
+file.0=D\:\\project\\5.0AfterCharacter\\6.0Fingerprint\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_520d86d22227a1f0a5ee7a0c20fa7bb413aa75c9\\classes.dex

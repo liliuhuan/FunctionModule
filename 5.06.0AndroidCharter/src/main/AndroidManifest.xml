@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liliuhuan.a50aftercharacter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".android5.MainActivity" />
+        <activity android:name=".android5.ToolBarActivity" />
+        <activity
+            android:name=".android5.EvelvationActivity"
+            android:label="@string/title_activity_evelvation" />
+        <activity
+            android:name=".android5.PaletteActivity"
+            android:label="@string/title_activity_palette" />
+        <activity
+            android:name=".android5.RippleActivity"
+            android:label="@string/title_activity_ripple">
+
+        </activity>
+        <activity
+            android:name=".android6.TextInputLayoutActivity"
+            android:label="@string/title_activity_text_input_layout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

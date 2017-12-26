@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_tool_bar" />
+    <!--clickable与background 共用，矩形边框水波纹-->
+    <TextView
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="@string/title_activity_ripple"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--自定义-->
+    <TextView
+        android:background="@drawable/ripple"
+        android:text="@string/title_my_activity_ripple"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+
+    <!--自定义-->
+    <TextView
+        android:background="@drawable/ripple_shap"
+        android:text="@string/title_my_activity_ripple"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

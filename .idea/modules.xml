@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/5.06.0AndroidCharter/5.06.0AndroidCharter.iml" filepath="$PROJECT_DIR$/5.06.0AndroidCharter/5.06.0AndroidCharter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.0Fingerprint/6.0Fingerprint.iml" filepath="$PROJECT_DIR$/6.0Fingerprint/6.0Fingerprint.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.0ShortCut/7.0ShortCut.iml" filepath="$PROJECT_DIR$/7.0ShortCut/7.0ShortCut.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lock9ViewDemo/Lock9ViewDemo.iml" filepath="$PROJECT_DIR$/Lock9ViewDemo/Lock9ViewDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SlimplySkill.iml" filepath="$PROJECT_DIR$/SlimplySkill.iml" />
+      <module fileurl="file://D:\skill\SlimplySkill.iml" filepath="D:\skill\SlimplySkill.iml" />
       <module fileurl="file://$PROJECT_DIR$/aidlProject/aidlProject.iml" filepath="$PROJECT_DIR$/aidlProject/aidlProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleA/moduleA.iml" filepath="$PROJECT_DIR$/moduleA/moduleA.iml" />

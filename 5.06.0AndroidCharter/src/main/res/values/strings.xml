@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">"5.0AfterCharacter "</string>
+    <string name="dynamic_set_theme">动态设置主题</string>
+    <string name="str_title">标题</string>
+    <string name="title_activity_common">通过自定义模板创建的acitivity</string>
+    <string name="title_activity_evelvation">带阴影的activity</string>
+    <string name="title_activity_palette">根据图片拾取一个颜色值，取色器activity</string>
+    <string name="title_activity_ripple">水波纹</string>
+    <string name="title_my_activity_ripple">自定义水波纹</string>
+    <string name="title_activity_text_input_layout">新版editetext</string>
+    <string name="show_snack_message">我是snack_bar信息</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

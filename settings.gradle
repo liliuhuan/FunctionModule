@@ -1,1 +1,1 @@
-include ':app', ':mylibrary', ':Lock9ViewDemo', ':pswkeyboard', ':rsaAndaes', ':moduleA', ':moduleB', ':singleandMutil', ':aidlProject', ':7.0ShortCut'
+include ':app', ':mylibrary', ':Lock9ViewDemo', ':pswkeyboard', ':rsaAndaes', ':moduleA', ':moduleB', ':singleandMutil', ':aidlProject', ':7.0ShortCut', ':6.0Fingerprint', ':5.06.0AndroidCharter'

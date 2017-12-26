@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_tool_bar" />
+    <!--矩形边框水波纹-->
+    <TextView
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="@string/title_activity_ripple"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
+</LinearLayout>
