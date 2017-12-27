@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">APPdevelop</string>
+    <string name="chooser_title">选择</string>
+    <string name="label_activity_main2">intent跳转多了activity</string>
+    <string name="label_activity_share">允许外部应用启动这个acitivity</string>
+    <string name="label_activity_permission">动态权限申请</string>
+    <string name="label_activity_save_file">文件保存</string>
+    <string name="label_activity_multi_media">多媒体</string>
+</resources>
