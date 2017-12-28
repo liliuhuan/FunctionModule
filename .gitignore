@@ -9,4 +9,19 @@
 .externalNativeBuild
 /lib
 .idea/markdown-navigator/profiles_settings.xml
+rsalibrary/build
+6.0Fingerprint/build
 
+shareAppHome/build
+shareOtherApp/build
+singleandMutil/build
+rsaAndaes/build
+moduleA/build
+moduleB/build
+mylibrary/build
+pswkeyboard/build
+app/build
+5.06.0AndroidCharter/build
+7.0ShortCut/build
+aidlProject/build
+.idea

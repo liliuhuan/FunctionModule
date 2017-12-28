@@ -14,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/pswkeyboard/pswkeyboard.iml" filepath="$PROJECT_DIR$/pswkeyboard/pswkeyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/rsaAndaes/rsaAndaes.iml" filepath="$PROJECT_DIR$/rsaAndaes/rsaAndaes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rsalibrary/rsalibrary.iml" filepath="$PROJECT_DIR$/rsalibrary/rsalibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shareAppHome/shareAppHome.iml" filepath="$PROJECT_DIR$/shareAppHome/shareAppHome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shareOtherApp/shareOtherApp.iml" filepath="$PROJECT_DIR$/shareOtherApp/shareOtherApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleandMutil/singleandMutil.iml" filepath="$PROJECT_DIR$/singleandMutil/singleandMutil.iml" />
       <module fileurl="file://$PROJECT_DIR$/skill.iml" filepath="$PROJECT_DIR$/skill.iml" />
     </modules>

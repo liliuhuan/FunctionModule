@@ -450,14 +450,14 @@
     <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
     <string name="fingerprint_success">Fingerprint recognized</string>
     <string name="intro_message">
-        
+        <![CDATA[
         
             
 This sample demonstrates how you can use registered fingerprints to authenticate the user
 before proceeding some actions such as purchasing an item. This version uses asymmetric keys.
             
         
-        
+        ]]>
     </string>
     <string name="item_description">Mesh backpack in white. Black textile trim throughout.</string>
     <string name="item_price">$62.68</string>

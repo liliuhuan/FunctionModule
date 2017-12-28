@@ -25,3 +25,14 @@ signleandMutil：单多选
 shareAppHome ：7.0拍照图片存储适配provider，其他应用刁起及结果回传
 
 shareOtherApp : 应用间数据传递及调用
+
+rsalibrary: library打包成jar包引用在app中  ，
+aar 配置
+ ①.将aar包复制到lib目录下
+ ②.配置工程app的build.gradle文件：
+ 加入
+   repositories {
+       flatDir {
+        dirs 'libs'
+       }
+  compile(name:'httputils-debug', ext:'aar')

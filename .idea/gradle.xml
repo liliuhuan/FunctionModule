@@ -19,6 +19,9 @@
             <option value="$PROJECT_DIR$/mylibrary" />
             <option value="$PROJECT_DIR$/pswkeyboard" />
             <option value="$PROJECT_DIR$/rsaAndaes" />
+            <option value="$PROJECT_DIR$/rsalibrary" />
+            <option value="$PROJECT_DIR$/shareAppHome" />
+            <option value="$PROJECT_DIR$/shareOtherApp" />
             <option value="$PROJECT_DIR$/singleandMutil" />
           </set>
         </option>
