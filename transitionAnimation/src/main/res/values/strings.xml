@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestStringFormate</string>
+    <string name="text_str" formatted="false">
+    <![CDATA[
+    客户&emsp;<font color = \'#1EB259\'>%s&emsp;&emsp;&emsp;&emsp;</font>成单&emsp;<font color = \'#E33B3B\'>%s</font>
+    ]]>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

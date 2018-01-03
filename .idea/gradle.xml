@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/shareAppHome" />
             <option value="$PROJECT_DIR$/shareOtherApp" />
             <option value="$PROJECT_DIR$/singleandMutil" />
+            <option value="$PROJECT_DIR$/transitionAnimation" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

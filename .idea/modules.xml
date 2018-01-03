@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/shareOtherApp/shareOtherApp.iml" filepath="$PROJECT_DIR$/shareOtherApp/shareOtherApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleandMutil/singleandMutil.iml" filepath="$PROJECT_DIR$/singleandMutil/singleandMutil.iml" />
       <module fileurl="file://$PROJECT_DIR$/skill.iml" filepath="$PROJECT_DIR$/skill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transitionAnimation/transitionAnimation.iml" filepath="$PROJECT_DIR$/transitionAnimation/transitionAnimation.iml" />
     </modules>
   </component>
 </project>

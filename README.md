@@ -38,3 +38,5 @@ aar 配置
         dirs 'libs'
        }
   compile(name:'httputils-debug', ext:'aar')
+  
+TransitionAnimation : 转场动画

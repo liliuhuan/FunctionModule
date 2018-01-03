@@ -47,7 +47,6 @@ public abstract class BaseActivity extends FragmentActivity implements View.OnCl
         super.onDestroy();
         bind.unbind();
     }
-
     @Override
     public void onClick(View v) {
         this.finish();
